@@ -5,6 +5,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: 'Work Sans', sans-serif;
@@ -20,6 +24,7 @@ body {
     --main-duration:0.5s;
     
 }
+
 
 
 
@@ -46,7 +51,6 @@ body {
     padding-right:15px;
     margin-left:auto;
     margin-right:auto;
-    width:600px;
     padding-bottom: 5px;     /*  did it by myself */
     
 }
@@ -90,6 +94,7 @@ body {
 
 .header .logo {
     width:35px ;
+    margin-left: 22px;
 }
 
 .header .links{
@@ -260,7 +265,7 @@ body {
 /* end features */
 
 
-/* start services */
+/* start service */
 
 
 .services .service-content {
@@ -273,24 +278,21 @@ body {
 
 @media (max-width:767px) {
 
-    .services .service-content {
-        text-align: center;
-    }
+
 
     .services .service-content .srv{
-        display: flex;
+        display: block;
         text-align: center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        margin: 50px auto 50px;
     }
-
 }
 
-.services .service-content .srv{
-    display:flex ;
-}
+/* .services .service-content .srv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 .services .service-content .srv h3 {
@@ -299,15 +301,26 @@ body {
 
 
 .services .service-content .srv i {
-    color:var(--main-color);
-    flex-basis:60px ;
-    margin: 0 0 0 50px;
+    position: absolute;
+    color: var(--main-color);
+    
 }
 
-.services .service-content .srv .text {
-   flex: 1;
+@media (max-width:767px) {
 
+    .services {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 600px;
+    }
+   
+
+    .services .service-content .srv i {
+        margin-top: -45px;
+        margin-left: 1%;
+    }
 }
+ 
 
 .service-content .image{
     position: relative;
@@ -319,12 +332,14 @@ body {
     content: "";
     background-color: #444;
     position: absolute;
-    right: 10px;
-    width: 60px;
-    top: -25px;
-    height: calc(100% + 50px);
+    right: 60px;
+    width: 56px;
+    top: -50px;
+    height: calc(100% + 100px);
     z-index: -1;
 }
+
+
 
 @media (max-width:1199px){
     .service-content .image {
@@ -335,10 +350,9 @@ body {
 
 
 .service-content .image img {
-    width: 230px;
-    height: 300px;
+    width: 260px;
+    height: 345px
 }
-
 
 
 
@@ -347,24 +361,24 @@ body {
 /* end service */
 
 /* start portfolio */
-.portfolio{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: #f6f6f6;
-}
+ .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--section-background);
+ }  
 
-.portfolio .portfolio-content {
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-        gap: 30px;
+@media (max-width:767px) {
+    .portfolio {
+        width:590px;
     }
+
 
     .portfolio .portfolio-content .card {
-        background-color: white;
-        width: 300px;
+        margin: 0 135px;
+        
     }
 
+<<<<<<< HEAD
     @media(max-width:767px) {
         .portfolio .portfolio-content .card{
             margin-left:155px;
@@ -468,9 +482,47 @@ body {
    
 
 
+=======
+}
+
+ .portfolio .portfolio-content  {
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap:20px;
+  
+ }
+
+ .portfolio .portfolio-content .card {
+>>>>>>> 6e1959f857d27534ab28765501360fa99dc87192
     
+    background-color: white;
+    width:300px;
+ }
+
+ .portfolio .portfolio-content .card img {
+    width:100%;
+    height:230px;
+ }
+
+ .portfolio .portfolio-content .card .info {
+    padding: 15px;
+ }
+
+ .portfolio .portfolio-content .card .info  h3{
+    font-weight: bold;
+    margin: 0;
+ }
+ .portfolio .portfolio-content .card .info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+ }
+ 
 
 
+<<<<<<< HEAD
 
 
 
@@ -530,3 +582,6 @@ body {
 
 
    /* end contact */
+=======
+/* end portfolio */
+>>>>>>> 6e1959f857d27534ab28765501360fa99dc87192
